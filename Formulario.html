@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title>
 </head>
-<body>
-    <table>
-    <tr>
- <td>
+<body> 
+        <form action="http://ncoge.com/phps/formulario.php" method="post">
+
+        <table width="100%">
+     <tr>
+    <td align="center" width="60%" valign="top">
     <fieldset>
-        <legend><b>Datos personales</b></legend>
-<form action="http://ncoge.com/phps/formulario.php" method="post">
-    Nombre:
+         <legend><b>Datos personales</b></legend>
+     <p align="left">Nombre:
 <input type="text" name="nombre" id=""> 
 <br>
 Apellidos:
@@ -20,50 +21,82 @@ Apellidos:
 <br>
 Correo:
 <input type="text" name="correo" id="">
-<br> 
+ <p align="left">
 Hobbies:
-<br>
-<textarea name="hobbies" id="descripcion" cols="40" rows="5"></textarea>
-</form>
-</fieldset>
-</td>
-<td>
-    <fieldset>
-    <legend><b>Idiomas</b></legend>
 
+<textarea name="hobbies" id="descripcion" cols="40" rows="5"></textarea>
+</p>
+</fieldset>
+
+</td>
+<td align="center" width="40%" valign="top"> 
+
+       <fieldset>
+    <legend><b>Idiomas</b></legend>
+ <p align="left">
 <br> Puntua tu nivel de idiomas de 1 a 5:
 <p>
-<b>Ingles:</b><input name="fafa" type="checkbox" value="1"/> 1
-<input name="adadadadada" type="checkbox" value="2"/> 3
-<input name="fafafafa" type="checkbox" value="3"/> 3
-<input name="fafafafa" type="checkbox" value="4"/> 4
-<input name="fafafafa" type="checkbox" value="5"/> 5
-</p>
-<b>Frances:</b><input name="fafa" type="checkbox" value="1"/> 1
-<input name="fafafafa" type="checkbox" value="2"/> 3
-<input name="fafafafa" type="checkbox" value="3"/> 3
-<input name="fafafafa" type="checkbox" value="4"/> 4
-<input name="fafafafa" type="checkbox" value="5"/> 5
-<p>
-<b>Aleman:</b><input name="fafda" type="checkbox" value="1"/> 1
-<input name="fafafafafafa" type="checkbox" value="2"/> 3
-<input name="lista" type="checkbox" value="3"/> 3
-<input name="lista" type="checkbox" value="4"/> 4
-<input name="fafafafa" type="checkbox" value="5"/> 5
-</p>
+     <p align="left">
 
+<b>Ingles:</b><input name="ingles" type="radio" value="1"/> 1
+<input name="ingles" type="radio" value="2"/> 2
+<input name="ingles" type="radio"kbox value="3"/> 3
+<input name="ingles" type="radio" value="4"/> 4
+<input name="ingles" type="radio"kbox value="5"/> 5
+</p> <p align="left">
+
+<b>Frances:</b><input name="a" type="radio" value="1"/> 1
+<input name="a" type="radio" value="2"/> 2
+<input name="a" type="radio" value="3"/> 3
+<input name="a" type="radio" value="4"/> 4
+<input name="a" type="radio" value="5"/> 5
+<p> <p align="left">
+
+<b>Aleman:</b><input name="b"type="radio" value="1"/> 1
+<input name="b" type="radio" value="2"/> 2
+<input name="b" type="radio" value="3"/> 3
+<input name="b" type="radio" value="4"/> 4
+<input name="b" type="radio" value="5"/> 5
+</p>
 </fieldset>
 
-
-
-
-
-
-
-
 </td>
-</tr>
-
+<tr>
+<td>
+    <td>
+        <fieldset>
+            <LEGEND><B>Dominios de los siguientes progamas.</B> </LEGEND>
+   
+  <p style="text-align: justify; text-align-last: center;">
+Writer:<input name="Writer" type="checkbox" />  
+   Base:<input name="base" type="checkbox" /> </p>
+    <br>
+   <p style="text-align: justify; text-align-last: center;">
+Calc:<input name="calc" type="checkbox" />
+   Impress:<input name="impress" type="checkbox"/> </p>
+</fieldset>
+<tr>
+<td>
+    <td>
+        <fieldset>
+            <LEGEND><B><label for="so">Sistema operativo</label> <br/>
+<select id="so" name="so">Sistema Operativo:</B> </LEGEND>
+   <option value="" selected="selected">Linux</option>
+   <option value="" selected="selected">Windows</option>
+   <option value="" selected="selected">MAC</option>
+</fieldset>
+</div>
  </table>
+
+  
+  
+  <p align="center">
+      <input type="image" name="search" value="Enviar" src="imagddddddes.png" width="50px" />
+<br>
+    <input type="reset" name="reset" value="Reiniciar" />
+  </p>
+</form>
+
 </body>
 </html>
+
